@@ -21,4 +21,4 @@ const connection = mysql.createConnection({
     console.log("connected as id " + connection.threadId);
   });
 
-  module.exports = connection.connect;
+  module.exports = connection;
