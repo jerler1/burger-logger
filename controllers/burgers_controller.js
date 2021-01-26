@@ -5,6 +5,9 @@ const express = require("express");
 // Making a mini application router instead of pulling the full app in.
 const router = express.Router();
 
+// Importing the model (burger.js) to be used.
+const burger = require("../models/burger");
+
 // View Routes
 // =====================================================
 
@@ -29,8 +32,8 @@ router.delete("/api/burgers/:id", function (req, res) {
 // Put Routes
 // =====================================================
 
-router.update("/api/cats/:d", function (req, res) {
-    // Do something.
+router.update("/api/burgers/:id", function (req, res) {
+  // Do something.
 });
 
 // Exporting the router object.
