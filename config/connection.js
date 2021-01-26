@@ -21,4 +21,5 @@ const connection = mysql.createConnection({
     console.log("connected as id " + connection.threadId);
   });
 
+  // Exporting connection so that the ORM file can access the database.
   module.exports = connection;
