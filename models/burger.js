@@ -28,7 +28,7 @@ const burger = {
 
   // Delete function.
   delete: function (condition, cb) {
-    orm.delete("cats", condition, function (res) {
+    orm.delete("burgers", condition, function (res) {
       cb(res);
     });
   },
