@@ -32,15 +32,15 @@ Learning how to use the call back functions and how the transfer data from one l
 This application uses a database. In the root directory, when the page loads, you will see two sections. Burgers consumed, and burgers to be consumed.
 In the new burger form add the burger you wish to add, and click add burger button, then when the burger populates you can click the devour burger, for when the burger has been consumed.
 ![gif of app](./Assets/gif.gif)
-Link to the deployed website can be found [here](https://github.com/jerler1/Employee-Roster).
+Link to the deployed website can be found [here](https://salty-springs-59862.herokuapp.com/).
 
-Link to the video is [here](https://drive.google.com/file/d/13U3kQguU-30ykuTUrLnWFEYe0VKW6Eel/view)
+GitHub Repo is [here](https://github.com/jerler1/burger-logger)
 
 #### **Credits**
 
 ---
 
-Thanks to my TA Peter for teaching me util promisify.
+Thanks to my tutor Bryon for helping me understand the ORM and callback functions.  Thanks to Pete and Tony for the debugging support.
 
 #### **License**
 
