@@ -26,11 +26,11 @@ router.get("/", function (req, res) {
 // =====================================================
 
 router.post("/api/burgers/", function (req, res) {
-  burger.create(["burger_name"]),
+  burger.create(["burger_name"],
     [req.body.name],
     function (result) {
       res.json({ id: result.insertId });
-    };
+    });
 });
 
 // Delete Routes
@@ -58,7 +58,7 @@ router.put("/api/burgers/:id", function (req, res) {
 
   burger.update(
     {
-      devoured: req.body.devoured,
+      devoured: req.body.consumed,
     },
     condition,
     function (result) {
