@@ -40,11 +40,13 @@ function objToSql(ob) {
 
 const orm = {
   all: function (tableInput, cb) {
+    console.log("Accessing the ORM.");
     let queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
+      console.log(result);
       cb(result);
     });
   },
@@ -62,7 +64,7 @@ const orm = {
       if (err) {
         throw err;
       }
-
+      console.log(result);
       cb(result);
     });
   },

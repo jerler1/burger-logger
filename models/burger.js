@@ -7,6 +7,7 @@ const orm = require("../config/orm");
 const burger = {
   // All function.  Pass to the ORM what to do for all cats.
   all: function (cb) {
+    console.log("Model access complete.")
     orm.all("burgers", function (response) {
       cb(response);
     });

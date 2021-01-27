@@ -12,6 +12,7 @@ const burger = require("../models/burger");
 // =====================================================
 
 router.get("/", function (req, res) {
+  console.log("Accessing Root Route");
   burger.all(function (allBurgers) {
     const hbsObject = {
       burgers: allBurgers,

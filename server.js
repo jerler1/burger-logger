@@ -23,6 +23,7 @@ const expressHandleBars = require("express-handlebars");
 // Not entirely sure what this does.  Looks like it's setting the default handlebar file.  Named main.
 // =====================================================
 app.engine("handlebars", expressHandleBars({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // Importing Routes to give to the server.
 // =====================================================
